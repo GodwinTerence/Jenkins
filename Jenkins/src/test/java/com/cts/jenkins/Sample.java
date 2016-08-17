@@ -8,12 +8,14 @@ import org.testng.annotations.Test;
 
 public class Sample {
 
-	@Test
-	@Parameters("url")
+	public String demo; 
+	@Test	
 	public void testMethod(String url)
 	{
+		demo=System.getProperty("url");
+		System.out.println(demo);
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		driver.get(url);
+		driver.get(demo);
 	}
 }

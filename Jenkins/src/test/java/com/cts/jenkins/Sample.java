@@ -10,7 +10,7 @@ public class Sample {
 
 	public String demo; 
 	@Test	
-	public void testMethod(String url)
+	public void testMethod()
 	{
 		demo=System.getProperty("url");
 		System.out.println(demo);

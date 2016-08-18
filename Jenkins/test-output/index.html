@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\PEARSON-PC\AppData\Local\Temp\testng-eclipse--309970983\testng-customsuite.xml</span>
+                    <span>C:\Users\PEARSON-PC\AppData\Local\Temp\testng-eclipse-763429710\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cts.jenkins.Sample" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.cts.jenkins.Sample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,14 +128,134 @@
                   <a name="testMethod">
                   </a> <!-- testMethod -->
                   <span class="method-name">testMethod</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+e6fd}&quot;,&quot;syncGUID&quot;:&quot;YwOomQMzu4tb&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;48.0&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;installDate&quot;:1469556455000,&quot;updateDate&quot;:1469556455000,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:21899,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;48.0&quot;,&quot;maxVersion&quot;:&quot;48.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1471502766442	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1471502766443	DeferredSave.extensions.json	DEBUG	Save changes
+1471502766443	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1471502766443	addons.xpi-utils	DEBUG	Updating add-on states
+1471502766444	addons.xpi-utils	DEBUG	Writing add-ons list
+1471502766451	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1471502766451	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1471502766451	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1471502766452	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1471502766453	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1471502766454	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.4.3
+1471502766472	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1471502766472	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1471502766472	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Starting provider: GMPProvider
+1471502766480	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1471502766480	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1471502766480	addons.manager	DEBUG	Starting provider: PluginProvider
+1471502766481	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1471502766481	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1471502766482	addons.manager	DEBUG	Completed startup sequence
+1471502766936	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1471502766936	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1471502766937	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1471502766939	DeferredSave.extensions.json	DEBUG	Starting write
+1471502767234	addons.repository	DEBUG	No addons.json found.
+1471502767235	DeferredSave.addons.json	DEBUG	Save changes
+1471502767247	DeferredSave.addons.json	DEBUG	Starting timer
+1471502767283	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1471502767283	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1471502767283	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1471502767289	DeferredSave.extensions.json	DEBUG	Write succeeded
+1471502767289	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1471502767315	DeferredSave.addons.json	DEBUG	Starting write
+1471502767326	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;PEARSON&apos;, ip: &apos;10.219.54.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.cts.jenkins.Sample.testMethod(Sample.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+e6fd}&quot;,&quot;syncGUID&quot;:&quot;YwOomQMzu4tb&quot;,&quot;location&quot;:&quot;app-global&quot;,&quot;version&quot;:&quot;48.0&quot;,&quot;type&quot;:&quot;theme&quot;,&quot;internalName&quot;:&quot;classic/1.0&quot;,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Default&quot;,&quot;description&quot;:&quot;The default theme.&quot;,&quot;creator&quot;:&quot;Mozilla&quot;,&quot;homepageURL&quot;:null,&quot;contributors&quot;:[&quot;Mozilla Contributors&quot;]},&quot;visible&quot;:true,&quot;active&quot;:true,&quot;userDisabled&quot;:false,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;installDate&quot;:1469556455000,&quot;updateDate&quot;:1469556455000,&quot;applyBackgroundUpdates&quot;:1,&quot;skinnable&quot;:true,&quot;size&quot;:21899,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;48.0&quot;,&quot;maxVersion&quot;:&quot;48.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1471502766442	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1471502766443	DeferredSave.extensions.json	DEBUG	Save changes
+1471502766443	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1471502766443	addons.xpi-utils	DEBUG	Updating add-on states
+1471502766444	addons.xpi-utils	DEBUG	Writing add-ons list
+1471502766451	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1471502766451	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1471502766451	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1471502766452	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1471502766453	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1471502766454	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.4.3
+1471502766472	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1471502766472	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1471502766472	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1471502766473	addons.manager	DEBUG	Starting provider: GMPProvider
+1471502766480	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1471502766480	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1471502766480	addons.manager	DEBUG	Starting provider: PluginProvider
+1471502766481	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1471502766481	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1471502766482	addons.manager	DEBUG	Completed startup sequence
+1471502766936	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1471502766936	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1471502766937	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1471502766939	DeferredSave.extensions.json	DEBUG	Starting write
+1471502767234	addons.repository	DEBUG	No addons.json found.
+1471502767235	DeferredSave.addons.json	DEBUG	Save changes
+1471502767247	DeferredSave.addons.json	DEBUG	Starting timer
+1471502767283	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1471502767283	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1471502767283	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1471502767289	DeferredSave.extensions.json	DEBUG	Write succeeded
+1471502767289	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1471502767315	DeferredSave.addons.json	DEBUG	Starting write
+1471502767326	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 32 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PEARSON-PC\AppData\Local\Temp\testng-eclipse--309970983\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\PEARSON-PC\AppData\Local\Temp\testng-eclipse-763429710\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -188,12 +308,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testMethod')
 data.setCell(0, 2, 'com.cts.jenkins.Sample')
-data.setCell(0, 3, 4136);
+data.setCell(0, 3, 47450);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,6 +341,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.cts.jenkins.Sample</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

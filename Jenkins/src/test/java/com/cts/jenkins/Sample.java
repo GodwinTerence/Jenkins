@@ -12,10 +12,12 @@ public class Sample {
 	@Test	
 	public void testMethod()
 	{
+		
 		demo=System.getProperty("url");
 		System.out.println(demo);
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get(demo);
+		
 	}
 }

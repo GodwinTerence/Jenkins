@@ -38,8 +38,8 @@ public class Sample {
 	public void testMethod() throws MalformedURLException, InterruptedException {
 
 		driver.get("http://www.google.com");
-		System.out.println(
-				driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[2]")).getAttribute("value"));
+		Thread.sleep(4000);
+		System.out.println(driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[2]")).getAttribute("value"));
 		driver.findElement(By.xpath("//*[@id='sb_ifc0']")).sendKeys("Godwin");
 		driver.findElement(By.id("sblsbb")).click();
 		Thread.sleep(4000);

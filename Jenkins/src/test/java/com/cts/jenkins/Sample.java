@@ -36,7 +36,10 @@ public class Sample {
 	public void testMethod() throws MalformedURLException {
 
 		driver.get("http://www.google.com");
+		System.out.println(
+				driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[2]")).getAttribute("value"));
 		driver.findElement(By.xpath("//*[@id='sb_ifc0']")).sendKeys("Godwin");
+
 	}
 
 	@AfterMethod

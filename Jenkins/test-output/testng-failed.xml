@@ -6,6 +6,8 @@
       <class name="com.cts.jenkins.Sample">
         <methods>
           <include name="testMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.cts.jenkins.Sample -->
     </classes>

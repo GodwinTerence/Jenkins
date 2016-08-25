@@ -3,9 +3,11 @@ package com.cts.jenkins;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -33,12 +35,20 @@ public class Sample {
 	}
 
 	@Test
-	public void testMethod() throws MalformedURLException {
+	public void testMethod() throws MalformedURLException, InterruptedException {
 
 		driver.get("http://www.google.com");
 		System.out.println(
 				driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div[3]/center/input[2]")).getAttribute("value"));
 		driver.findElement(By.xpath("//*[@id='sb_ifc0']")).sendKeys("Godwin");
+		driver.findElement(By.id("sblsbb")).click();
+		Thread.sleep(4000);
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		System.out.println(links.size());
+		for (WebElement a : links) {
+
+			System.out.println(a.getText());
+		}
 
 	}
 
